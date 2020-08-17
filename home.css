@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&family=Raleway:wght@500;700&display=swap');
+
+/*Costume colors*/
+:root{
+  --hueso: #edddd4;
+  --terracota: #e07a5f;
+  --azul: #3d405b;
+  --verde: #81b29a;
+  --amarillo: #f2cc8f;
+  --rojo: #c44536;
+  --rojo-oscuro: #772e25;
+  --turquesa: #197278;
+  --verde-oscuro: #283d3b;
+  --marron: #b2967d;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*Header & Navigation Bar*/
+header{
+  position: fixed;
+  width: 100%;
+}
+
+.nav{
+  position: top;
+  display: flex;
+  justify-content: flex-end; /*THIS MAKES BAR GO LEFT*/
+  width: 100%;
+  height: 6vw;
+  background: var(--rojo);
+}
+
+.nav a{
+  color: var(--amarillo);
+  font-family: 'Raleway', sans-serif;
+  padding-right: 3vw;
+  padding-left: 3vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+/*Welcome Section*/
+
+#welcome-section{
+  height: 100vh;
+  width: 100%;
+  background-color: var(--hueso)
+}
+
+#welcome-section h1{
+  color: var(--verde-oscuro);
+  font-size: 6vw;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 35vh;
+}
+
+#welcome-section p{
+  color: var(--turquesa);
+  font-size: 3vw;
+   text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*Projects Section*/
+#projects{
+  background-color: var(--verde-oscuro);
+  height: 100vh;
+  width: 100%;
+}
+
+/*Projects Title*/
+#projects h2{
+  text-align: center;
+  padding-top: 6vh;
+  padding-bottom: 7vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3vw;
+  color: var(--amarillo);
+}
+
+/*Projects Grid*/
+
+.project-tile{
+  display: grid;
+  grid-template-columns: 25vw 25vw;
+  justify-content: space-evenly;
+  height: 100vw;
+}
+
+.project-tile img{
+  width: 25vw;
+}
+.project-tile a {
+  text-decoration: none;
+}
+.project-tile p{
+  color: var(--hueso);
+  font-size: 2vw;
+}
+
+/*Contact*/
+
+#contacts{
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+
+#contacts h2{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3vw;
+  color: white;
+  padding-top: 20vh;
+}
+
+#contacts img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vh;
+  height: auto;
+  padding-top: 10vh;
+}
+
+/*Media querys*/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
